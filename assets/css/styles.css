@@ -179,14 +179,14 @@ header nav ul li a:hover {
 
 .primary-card .card-info p {
     width: 100%;
-    padding: 0.8vw;
-    font-size: 1.5vw;
+    padding: 10px;
+    font-size: 40px;
 }
 
 .secondary-card .card-info p {
     width: 100%;
     padding: 0.6vw;
-    font-size: 1.2vw;
+    font-size: 26px;
 }
 
 .primary-card .card-info {
@@ -212,7 +212,40 @@ header nav ul li a:hover {
     flex: 0 30%;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 980px) {
+    .bio-container {
+        flex-wrap: wrap-reverse;
+    }
+
+    .bio-container p {
+        width: 65%;
+    }
+
+    .bio-container img {
+        margin: 20px 10px;
+    }
+
+    .primary-card .card-info p {
+        width: 100%;
+        font-size: 35px;
+    }
+
+    .secondary-card .card-info p {
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-container p {
+        margin: 10px auto;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 768px) {
     header {
         align-items: center;
         flex-direction: column;
@@ -224,5 +257,25 @@ header nav ul li a:hover {
     
     header nav ul li a {
         font-size: 25px;
+    }
+
+    .bio-container p {
+        width: 80%;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .secondary-card img {
+        flex: 50%;
+    }
+
+    .primary-card .card-info p {
+        width: 100%;
+    }
+
+    .secondary-card .card-info p {
+        width: 100%;
     }
 }
