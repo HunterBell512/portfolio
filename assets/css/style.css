@@ -30,6 +30,7 @@ header h1 a {
 
 header nav {
     width: 100%;
+    padding: 30px 0;
     text-align: center;
     background-color: rgb(91, 19, 163);
 }
@@ -140,6 +141,10 @@ footer ul li a:hover {
 }
 
 @media screen and (max-width: 992px) {
+    * {
+        letter-spacing: 1px;
+    }
+
     #bio img {
         width: 70%;
         height: 70%;
@@ -161,6 +166,10 @@ footer ul li a:hover {
 }
 
 @media screen and (max-width: 768px) {
+    header nav {
+        padding: 0;
+    }
+
     header nav ul li {
         display: block;
         margin: 20px;
