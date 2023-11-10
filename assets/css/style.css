@@ -4,6 +4,10 @@
     color: white;
 }
 
+body {
+    background-color: rgb(40, 40, 40);
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -12,7 +16,7 @@ header {
 
 header h1 {
     width: 100%;
-    padding: 40px;
+    padding: 40px 0;
     text-align: center;
     background-color: rgb(61, 13, 109);
 }
@@ -25,7 +29,7 @@ header h1 a {
 
 header nav {
     width: 100%;
-    padding: 25px;
+    padding: 25px 0;
     text-align: center;
     background-color: rgb(91, 19, 163);
 }
@@ -55,35 +59,40 @@ header nav ul li a:hover {
 }
 
 section {
-    background-color: rgb(40, 40, 40);
+    border-top: 3px solid rgba(255, 255, 255, 0.15);
+    margin-bottom: 50px;
 }
 
-#bio h2 {
-    text-align: center;
-    padding: 75px;
-    font-size: 50px;
-}
 
 .bio-flexbox {
     display: flex;
     padding: 0 100px;
+    align-items: center;
 }
 
 .bio-p-div {
     background-color: rgba(255, 255, 255, 0.15);
     padding: 20px;
     border-radius: 10px;
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 .bio-p-div p {
-    font-size: 40px;
+    font-size: 30px;
     padding: 12px;
 }
 
 #bio img {
+    height: 30%;
+    width: 30%;
     border-radius: 50%;
     border: 10px solid black;
+}
+
+.section-h2 {
+    text-align: center;
+    padding: 75px;
+    font-size: 50px;
 }
 
 footer {
